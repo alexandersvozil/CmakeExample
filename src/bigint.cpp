@@ -10,16 +10,16 @@ BigInt::BigInt(vector<unsigned long long>& h){
 
 
 vector<unsigned long long> BigInt::get_vec() {
-  return this->vec;
+  return vec;
 }
 
 void BigInt::set_vec(vector<unsigned long long> &v) {
     vec = v;
 }
 
-std::ostream& operator<<(std::ostream& o, BigInt& b){
-  auto vector = b.get_vec();
-  for (auto x : vector){
+std::ostream& operator<<(std::ostream& o, const BigInt& b){
+  
+  for (auto x : b.vec){
     o << x << std::endl;
 
   }

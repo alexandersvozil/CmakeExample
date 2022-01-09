@@ -23,7 +23,7 @@ public:
 	//getter=datentyp wie instanzvariable
 	vector<unsigned long long> get_vec(); 
 	void set_vec(vector<unsigned long long> &v); 
-  friend ostream& operator<<(ostream& os, BigInt& b);
+  friend ostream& operator<<(ostream& os,const BigInt& b);
 
 };
 
